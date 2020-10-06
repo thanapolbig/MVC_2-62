@@ -1,0 +1,71 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "2",
+    "title": "KMITL"
+  },
+  "host": "localhost:7777",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "summary": "Add a email ,pass",
+        "description": "",
+        "operationId": "Login",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "formData",
+            "description": "enter email",
+            "required": true,
+            "type": "string",
+            "default": "61050193@cskmitl.ac.th"
+          },
+          {
+            "name": "pass",
+            "in": "formData",
+            "description": "enter pass",
+            "required": true,
+            "type": "string",
+            "default": "1234"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/checkincount": {
+      "post": {
+        "tags": [
+          "checkincount"
+        ],
+        "summary": "",
+        "description": "",
+        "operationId": "checkincount",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+//สคิปสร้าง database
+CREATE TABLE BigDB.dbo.MVC (
+    SID varchar(30) NULL,
+    Password varchar(30) NULL,
+    Firstname varchar(100) NULL,
+    Lastname varchar(100) NULL,
+    Status bit NULL
+) GO
+
+INSERT INTO BigDB.dbo.MVC (SID,Password,Firstname,Lastname,Status)VALUES('61050193','1234','thanapol','chimnam',0)
+INSERT INTO BigDB.dbo.MVC (SID ,Password ,Firstname,Lastname,Status)VALUES('61050194','1111','delta','bobo',0)
+INSERT INTO BigDB.dbo.MVC (SID ,Password ,Firstname,Lastname,Status)VALUES('61050195','2222','aaa','AAA',0)
+INSERT INTO BigDB.dbo.MVC (SID ,Password ,Firstname,Lastname,Status)VALUES('61050196','3333','bbb','BBB',0)
+INSERT INTO BigDB.dbo.MVC (SID ,Password ,Firstname,Lastname,Status)VALUES('61050197','4444','ccc','CCC',0)
